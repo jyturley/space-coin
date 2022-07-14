@@ -1,0 +1,49 @@
+<title>Space Coin ICO</title>
+<pre>
+ ____                        ____      _       ___ ____ ___
+/ ___| _ __   __ _  ___ ___ / ___|___ (_)_ __ |_ _/ ___/ _ \
+\___ \| '_ \ / _` |/ __/ _ | |   / _ \| | '_ \ | | |  | | | |
+ ___) | |_) | (_| | (_|  __| |__| (_) | | | |  | | |__| |_| |
+|____/| .__/ \__,_|\___\___|\____\___/|_|_| |_|___\____\___/
+      |_|
+</pre>
+
+The digital currency that aims to revolutionize the Asteroid Mining Industry
+<p><strong>Current Phase:</strong> <span id="currentPhase">Loading...</span></p>
+<p><strong>Raised so far (in wei):</strong> <span id="weiRaisedDisplay">Loading...</span></p>
+<p><strong>ICO Contract Address:</strong> <span id="icoAddress"></span></p>
+<p><strong>SPC Token Address:</strong> <span id="tokenAddress"></span></p>
+<p><strong>Current Status:</strong> <span id="pauseStatus"></span></p>
+<br>
+<br>
+<br>
+You have purchased <span id="contributionAmt">0</span> SPC tokens so far. Approximately (<span id="contributionAmtWei">0</span> ETH).
+
+<p>Enter ETH amount: <u><span id="buyTokensResult"></span></u></p>
+<input type="text" id="buyTokensInput" value="0.0001">
+<button id="buyTokensButton">Buy Tokens Now</button>
+
+<div id="managerControlPanel">
+    <h2>Manager's Panel</h2>
+    <span id="managerPanelDesc">You are not connected as the the manager</span>
+    <br>
+    <br>
+    <u><span id="addToWhiteListResult"></span></u>
+    <br>
+    <input type="text" id="whitelistInput" value="0x1234...">
+    <button id="addToWhiteList">Add to whitelist</button>
+    <br>
+    <br>
+    <u><span id="pauseResult"></span></u>
+    <br>
+    <button id="pauseButton">Pause</button>
+    <button id="unpauseButton">Unpause</button>
+</div>
+<script type="module" src="./index.js"></script>
+
+<!-- 
+    x1. Displays how many tokens the user has purchased
+    x2. Allows the user to deposit ETH into your ICO contract
+    x3. Shows error messages when user makes an invalid request 
+    (i.e. attempting to deposit beyond the limit)
+ -->
